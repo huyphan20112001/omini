@@ -81,7 +81,8 @@
   .slide-detail {
     flex: 0 0 30%;
   }
-  .banner {
+  .advise-heading {
+    font-size: 2.7rem;
   }
 }
 @media screen and (max-width: 880px) {
@@ -99,7 +100,9 @@
     display: flex;
     flex-direction: column;
   }
-
+  .blog-content {
+    font-size: 1.8rem;
+  }
   .slide-item {
     margin: 0 0 30px 0;
   }
@@ -188,6 +191,12 @@
   .footer {
     padding: 20px 40px;
   }
+  .blog-item {
+    background: #ffffff;
+
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 24px;
+  }
 }
 @media screen and (max-width: 640px) {
   input[name="email"],
@@ -242,6 +251,24 @@
   .medic-price {
     margin-left: -50px;
   }
+  .product-img {
+    width: 40px;
+    height: 40px;
+  }
+  .product-name,
+  .product-key,
+  .product-price {
+    font-size: 1.4rem;
+  }
+  .product-item.active {
+    padding: 6px 20px 7px 20px;
+  }
+  .product-img,
+  .product-name,
+  .product-key,
+  .product-kind {
+    margin-right: 5px;
+  }
 }
 @media screen and (max-width: 530px) {
   /* HEADER */
@@ -264,6 +291,10 @@
   .logo {
     flex: 1;
   }
+  .home-content .heading h2 {
+    font-size: 4rem;
+    text-align: center;
+  }
   .background-menu.enable {
     position: fixed;
     top: 0;
@@ -279,15 +310,14 @@
     position: absolute;
     top: 25px;
     right: 21px;
+    margin-right: 21px;
     font-size: 2rem;
     color: var(--white-color);
   }
   .menu-list__mobile {
-    display: flex;
-    flex-direction: column;
     flex: 1;
     text-align: center;
-    margin-top: 80px;
+    margin: 40px;
   }
   .menu-link__mobile {
     color: var(--white-color);
@@ -311,12 +341,25 @@
   .footer-menu__mobile .about span {
     margin-bottom: 32px;
   }
-  .footer-menu__mobile .slogan span {
-    color: var(--grey5-color);
+  .slogan {
     margin-bottom: 40px;
   }
-  .slogan {
+  .footer-menu__mobile .slogan span {
+    color: var(--grey5-color);
+    font-size: 1.4rem;
+    font-weight: 400;
+  }
+  .footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about {
     margin-right: 0;
+    margin-bottom: 32px;
+  }
+  .slogan {
+    margin-left: 0;
   }
 }
 @media screen and (max-width: 485px) {
@@ -360,5 +403,110 @@
     font-size: 1.2rem;
   }
 }
+@media screen and (max-width: 450px) {
+  .menu-item__mobile {
+    flex: 1;
+  }
+  .slide-heading h3 {
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+  }
+
+  .product-img {
+    width: 35px;
+    height: 35px;
+    margin-right: 6px;
+  }
+  .product-name {
+    margin-right: 21px;
+  }
+  .product-key {
+    margin-right: 24px;
+  }
+  .product-kind {
+    margin-right: 35px;
+  }
+  .product-name,
+  .product-key,
+  .product-kind,
+  .product-price {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+  }
+  .slide-background {
+    padding: 15px;
+  }
+  .medic-img {
+    width: 87px;
+    height: 87px;
+  }
+  .medic-name {
+    font-size: 1.3rem;
+    line-height: 1.7rem;
+  }
+  .medic-price span {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .discount-text {
+    font-size: 0.8rem;
+  }
+  .type-discount span {
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+  }
+  .medic-price {
+    padding: 5px 10px;
+  }
+  .advise-img {
+    grid-column-end: 4;
+  }
+  .advise-heading {
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  .advise-input {
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+}
 @media screen and (max-width: 377px) {
+  .home-content .heading h2 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 4.8rem;
+  }
+  .home-content {
+    margin: 64px 0 0 0;
+  }
+  .heading-btn__pad {
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 2.4rem;
+  }
+  .banner svg {
+    width: 104px;
+    height: 104px;
+  }
+  .banner-content span {
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 3.6rem;
+  }
+  .heading h2 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 4.8rem;
+  }
+  .heading p {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+  }
+  .slide-btn__product {
+    padding: 5px 12px 7px 12px;
+  }
+  .product-item {
+    width: 100%;
+  }
 }

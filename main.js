@@ -55,6 +55,10 @@ $(document).ready(function () {
           isFinite: true,
           draggable: true,
           dots: true,
+          responsive: {
+            breakpoint: 414,
+            centerMode: true,
+          },
         },
       },
     ],
