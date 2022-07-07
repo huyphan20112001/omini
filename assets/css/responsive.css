@@ -1,14 +1,14 @@
-@media screen and (max-width: 1305.98px) {
+@media screen and (max-width: 1310px) {
   #advise {
     padding: 58px 50px 93px 50px;
   }
 }
-@media screen and (max-width: 1130.98px) {
+@media screen and (max-width: 1131px) {
   .detail-heading {
     font-size: 2.7rem;
   }
 }
-@media screen and (max-width: 1030.98px) {
+@media screen and (max-width: 1031px) {
   .slide-img {
     margin-right: 32px;
     flex: 0 0 60%;
@@ -19,7 +19,7 @@
     flex: 0 0 40%;
   }
   .slide-background {
-    width: 537px;
+    max-width: 537px;
   }
   .slide-item {
     margin-right: 60px;
@@ -45,7 +45,7 @@
     margin-right: 55px;
   }
 }
-@media screen and (max-width: 1023.98px) {
+@media screen and (max-width: 1024px) {
   #advise {
     padding: 48px 40px 83px 40px;
   }
@@ -73,7 +73,7 @@
     width: 360px !important;
   }
 }
-@media screen and (max-width: 940.98px) {
+@media screen and (max-width: 940px) {
   .slide-img {
     flex: 0 0 70%;
   }
@@ -84,7 +84,7 @@
   .banner {
   }
 }
-@media screen and (max-width: 880.98px) {
+@media screen and (max-width: 880px) {
   .advise-img {
     width: 100px;
     height: 100px;
@@ -93,12 +93,13 @@
     font-size: 2.5rem;
   }
 }
-@media screen and (max-width: 850.98px) {
+@media screen and (max-width: 850px) {
   .multiple-items,
   .slide-item {
     display: flex;
     flex-direction: column;
   }
+
   .slide-item {
     margin: 0 0 30px 0;
   }
@@ -147,20 +148,217 @@
   .blog-item {
     display: flex;
     flex-direction: column;
+    height: 100%;
   }
+  .footer {
+    padding: 40px 56px;
+  }
+  /* .medic-pay__btn {
+    font-size: 1.2rem;
+  } */
 }
 
-@media screen and (max-width: 800.98px) {
+@media screen and (max-width: 800px) {
   .footer {
     padding: 40px 80px;
   }
   .banner {
     display: flex;
     flex-direction: column;
+    text-align: center;
   }
   .banner-content {
     margin: 16px 0 24px 0;
   }
 }
-@media screen and (max-width: 376.98px) {
+@media screen and (max-width: 768px) {
+  .banner {
+    padding: 16px 12px 24px 12px;
+  }
+  .advise-input {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: flex;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 660px) {
+  .footer {
+    padding: 20px 40px;
+  }
+}
+@media screen and (max-width: 640px) {
+  input[name="email"],
+  input[name="phone"] {
+    margin-right: 8px;
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  .advise-input {
+    display: flex;
+    flex-direction: column;
+  }
+  .advise-img {
+    grid-row-end: 2;
+  }
+  .medic-background {
+    width: 100%;
+  }
+  .medic-img {
+    width: 132px;
+    height: 132px;
+  }
+  .slide-heading h3 {
+    font-size: 2rem;
+  }
+  .medic-pay__btn {
+    font-size: 1.6rem;
+  }
+  .type-discount {
+    min-width: 150px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .medic-pay__btn {
+    transform: translateX(20%);
+    width: 200px;
+    font-size: 1.3rem;
+  }
+  .medic-img {
+    width: 100px;
+    height: 100px;
+    margin-right: -70px;
+  }
+  .slide-heading h3 {
+    font-size: 1.5rem;
+  }
+  .medic-price {
+    margin-left: -50px;
+  }
+}
+@media screen and (max-width: 530px) {
+  /* HEADER */
+  .header-menu__item:not(:last-child) {
+    display: none;
+  }
+  .header-menu__item {
+    margin-right: 27px;
+  }
+  .menu {
+    font-size: 2rem;
+    display: block;
+  }
+  .background-menu.enable {
+    display: block;
+  }
+  .menu-icon {
+    line-height: 40px;
+  }
+  .logo {
+    flex: 1;
+  }
+  .background-menu.enable {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: var(--menu-back);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .close-menu__icon {
+    position: absolute;
+    top: 25px;
+    right: 21px;
+    font-size: 2rem;
+    color: var(--white-color);
+  }
+  .menu-list__mobile {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    text-align: center;
+    margin-top: 80px;
+  }
+  .menu-link__mobile {
+    color: var(--white-color);
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 3rem;
+  }
+  .menu-item__mobile:not(:last-child) {
+    margin-bottom: 68px;
+  }
+  .footer-menu__mobile {
+    align-items: flex-end;
+    background-color: var(--grey-color);
+    padding: 60px 100px 40px 100px;
+  }
+  .footer-menu__mobile .logo span,
+  .footer-menu__mobile .about span,
+  .footer-menu__mobile .help span {
+    color: var(--white-color);
+  }
+  .footer-menu__mobile .about span {
+    margin-bottom: 32px;
+  }
+  .footer-menu__mobile .slogan span {
+    color: var(--grey5-color);
+    margin-bottom: 40px;
+  }
+  .slogan {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 485px) {
+  .footer,
+  .footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about {
+    margin-right: 0;
+  }
+  .slogan span {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: var(--grey-color);
+  }
+  .font {
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+  .medic-img {
+    width: 90px;
+    height: 90px;
+  }
+  .slide-heading h3 {
+    margin-left: 0;
+  }
+  .discount-text {
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+  .percent,
+  .btn-medic {
+    font-size: 1.5rem;
+  }
+  .type-discount {
+    min-width: 110px;
+  }
+  .type-discount span {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 377px) {
 }

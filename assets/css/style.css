@@ -415,12 +415,13 @@ input[type="number"]::-webkit-outer-spin-button {
   background-color: var(--green-color);
   transform: translateY(0%);
   border-radius: 8px;
-  min-width: 277px;
+  width: 277px;
   text-align: center;
   font-size: 1.8rem;
   font-weight: 600;
   color: var(--fa-color);
   transform: translateX(20%);
+  padding: 0 20px;
 }
 .medic-background {
   max-width: 561px;
@@ -568,6 +569,10 @@ input[type="number"]::-webkit-outer-spin-button {
 .blog-img img {
   object-fit: contain;
 }
+.blog-img {
+  width: 100%;
+  height: 100%;
+}
 .blog-menu {
   display: flex;
   justify-content: center;
@@ -578,7 +583,7 @@ input[type="number"]::-webkit-outer-spin-button {
   background-color: var(--white-color);
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
   border-radius: 24px;
-  height: 358px;
+  min-height: 357px;
 }
 .blog-item:not(:last-child) {
   margin-right: 24px;
@@ -680,5 +685,8 @@ input[name="phone"] {
 }
 
 .menu {
+  display: none;
+}
+.background-menu {
   display: none;
 }
