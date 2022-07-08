@@ -653,6 +653,9 @@
   .header-btn__pad {
     padding: 8px 32px;
   }
+  .footer-menu__mobile {
+    padding: 15px 60px;
+  }
 }
 @media screen and (max-width: 280px) {
   .galaxy-fold {
