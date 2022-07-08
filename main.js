@@ -2,7 +2,7 @@ $(document).ready(function () {
   $(".multiple-items").slick({
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     autoPlaySpeed: 1500,
     isFinite: true,
     draggable: true,
@@ -27,7 +27,7 @@ $(document).ready(function () {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          autoplay: false,
+          autoplay: true,
           autoPlaySpeed: 1500,
           isFinite: true,
           draggable: true,
@@ -50,7 +50,7 @@ $(document).ready(function () {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          autoplay: false,
+          autoplay: true,
           autoPlaySpeed: 1500,
           isFinite: true,
           draggable: true,
