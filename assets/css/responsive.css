@@ -73,6 +73,25 @@
     width: 360px !important;
   }
 }
+@media screen and (max-width: 1005px) {
+  .heading h2 {
+    font-size: 4.6rem;
+  }
+  .only {
+    margin: 70px 0;
+  }
+}
+@media screen and (max-width: 980px) {
+  .banner {
+    width: 850px;
+  }
+  .banner-content {
+    margin-right: 130px;
+  }
+  .heading h2 {
+    font-size: 4.6rem;
+  }
+}
 @media screen and (max-width: 940px) {
   .slide-img {
     flex: 0 0 70%;
@@ -92,6 +111,21 @@
   }
   .advise-heading {
     font-size: 2.5rem;
+  }
+  .banner {
+    width: 650px;
+  }
+  .banner-content {
+    margin-right: 80px;
+  }
+  .banner svg {
+    margin: 32px 70px;
+  }
+  .only {
+    margin: 50px 0;
+  }
+  .detail-heading {
+    margin-top: 32px;
   }
 }
 @media screen and (max-width: 850px) {
@@ -117,7 +151,7 @@
     align-items: inherit;
   }
   .detail-heading {
-    margin-top: 58px;
+    margin-top: 25px;
   }
   .detail-icon {
     margin-top: 32px;
@@ -167,16 +201,17 @@
   }
   .banner {
     display: flex;
-    flex-direction: column;
     text-align: center;
   }
   .banner-content {
-    margin: 16px 0 24px 0;
+    margin: 16px 98px 24px 0;
   }
 }
 @media screen and (max-width: 768px) {
   .banner {
-    padding: 16px 12px 24px 12px;
+    text-align: left;
+    width: 650px;
+    padding: 16px 40px 24px 50px;
   }
   .advise-input {
     grid-column-start: 1;
@@ -185,6 +220,12 @@
     grid-row-end: 3;
     display: flex;
     align-items: center;
+  }
+  .banner-content {
+    margin: 16px 0 24px 0;
+  }
+  .banner svg {
+    margin: 0 27px 0 0;
   }
 }
 @media screen and (max-width: 660px) {
@@ -196,6 +237,30 @@
 
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
     border-radius: 24px;
+  }
+  .home-content {
+    margin: 40px 0 0 0;
+  }
+  .home-content .heading h2 {
+    margin: 20px 0;
+  }
+  .banner {
+    width: 600px;
+    flex-direction: row;
+    padding: 16px 32px 16px 32px;
+  }
+  .banner svg {
+    margin: 0;
+  }
+  .detail-heading {
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 4.8rem;
+  }
+  .footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 @media screen and (max-width: 640px) {
@@ -228,12 +293,32 @@
   .type-discount {
     min-width: 150px;
   }
+  .banner {
+    width: 450px;
+    padding: 12px 32px 24px 32px;
+  }
 }
 @media screen and (max-width: 580px) {
   .footer-left {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .banner {
+    padding: 0 28px;
+  }
+  .banner svg {
+    width: 120px;
+    height: 120px;
+  }
+  .banner-content span {
+    font-size: 2.2rem;
+  }
+  .home-content .heading h2 {
+    text-align: center;
+  }
+  .detail-icon {
+    margin-bottom: 50px;
   }
   .medic-pay__btn {
     transform: translateX(20%);
@@ -402,6 +487,19 @@
   .type-discount span {
     font-size: 1.2rem;
   }
+  .banner {
+    width: 350px;
+    padding: 12px 20px;
+  }
+  .banner-content span {
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 3.6rem;
+  }
+  .banner svg {
+    width: 104px;
+    height: 104px;
+  }
 }
 @media screen and (max-width: 450px) {
   .menu-item__mobile {
@@ -411,7 +509,36 @@
     font-size: 1.3rem;
     line-height: 1.6rem;
   }
-
+  .banner {
+    display: flex;
+    flex-direction: column;
+  }
+  .banner svg {
+    width: 104px;
+    height: 104px;
+  }
+  .banner-content {
+    text-align: center;
+  }
+  .heading h2 {
+    font-size: 3.2rem;
+    line-height: 4.8rem;
+  }
+  .slide-detail {
+    margin-left: 0;
+    font-size: 2.4rem;
+    font-weight: 600;
+  }
+  .detail-desc {
+    font-size: 1.6rem;
+  }
+  .heading p {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+  .detail-icon {
+    margin-bottom: 32px;
+  }
   .product-img {
     width: 35px;
     height: 35px;
@@ -469,6 +596,9 @@
     grid-row-start: 3;
     grid-row-end: 4;
   }
+  .home-content .heading h2 {
+    font-size: 3.2rem;
+  }
 }
 @media screen and (max-width: 377px) {
   .home-content .heading h2 {
@@ -483,6 +613,9 @@
     font-size: 1.6rem;
     font-weight: 600;
     line-height: 2.4rem;
+  }
+  .banner {
+    width: 270px;
   }
   .banner svg {
     width: 104px;
@@ -508,6 +641,17 @@
   }
   .product-item {
     width: 100%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .banner-content span {
+    font-size: 2rem;
+  }
+  .logo span {
+    font-size: 2.5rem;
+  }
+  .header-btn__pad {
+    padding: 8px 32px;
   }
 }
 @media screen and (max-width: 280px) {

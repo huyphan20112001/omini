@@ -19,7 +19,7 @@ $(document).ready(function () {
   $(".extension-menu").slick({
     responsive: [
       {
-        breakpoint: 1920,
+        breakpoint: 9999,
         settings: "unslick",
       },
       {
@@ -42,7 +42,7 @@ $(document).ready(function () {
   $(".blog-menu").slick({
     responsive: [
       {
-        breakpoint: 1920,
+        breakpoint: 9999,
         settings: "unslick",
       },
       {

@@ -1,4 +1,11 @@
 /* HEADER  */
+.background-header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+}
 #header {
   display: flex;
   justify-content: space-between;
@@ -69,6 +76,8 @@
   display: grid;
   align-items: center;
   border-radius: 32px;
+  width: 936px;
+  margin: 0 auto;
 }
 .banner svg {
   margin: 43px 112px;
@@ -89,7 +98,7 @@
 }
 
 .only {
-  max-width: 456px;
+  max-width: 468px;
   margin: 100px 0;
 }
 
@@ -318,9 +327,11 @@ input[type="number"]::-webkit-outer-spin-button {
 #advise {
   display: grid;
   background-color: var(--advise-back);
-  padding: 88px 156px 88px 252px;
+  padding: 88px 156px 88px 156px;
   border-bottom: 2px solid #91d5ff;
+  gap: 15px;
 }
+
 .advise-img {
   width: 140px;
   height: 140px;
@@ -354,6 +365,7 @@ input[name="phone"] {
   border: 1px solid #d0d4d7;
   border-radius: 8px;
   padding: 0 16px;
+  width: 100%;
 }
 
 .advise-btn {
@@ -380,7 +392,7 @@ input[name="phone"] {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 70px 156px;
+  padding: 70px 0;
 }
 .footer-left,
 .footer-right {
