@@ -104,6 +104,10 @@ const ABC = document.querySelectorAll.bind(document);
 const menuMobile = abc(".background-menu");
 const menuBtn = abc(".menu-icon");
 
+const openAnswer = ABC(".show-answer");
+console.log(openAnswer);
+const questionItem = abc(".question-item");
+
 const closeMenu = abc(".close-menu__icon");
 
 const app = {
@@ -115,6 +119,14 @@ const app = {
     closeMenu.onclick = function () {
       menuMobile.classList.remove("enable");
       menuMobile.classList.add("disable");
+    };
+    openAnswer.onclick = function () {
+      console.log(123);
+      openAnswer.classList.toggle("close");
+      // if (openAnswer.classList.contains("close")) {
+      //   _this.showAnswer();
+      // }
+      openAnswer.classList.toggle("open");
     };
   },
   start: function () {
