@@ -19,6 +19,7 @@
 .logo {
   height: 40px;
   line-height: 40px;
+  color: var(--black-color);
 }
 .logo span {
   font-size: 3rem;
