@@ -709,6 +709,11 @@ input[name="phone"] {
   -webkit-overflow-scrolling: touch; /* [3] */
   -ms-overflow-style: -ms-autohiding-scrollbar;
   padding: 0 16px;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.blog-navbar::-webkit-scrollbar {
+  display: none;
 }
 .navbar-item.active {
   color: var(--black-color);
@@ -926,4 +931,7 @@ input[name="phone"] {
 }
 .blog-detail-header {
   height: 72px;
+}
+.author-icon {
+  margin-right: 8px;
 }

@@ -105,7 +105,6 @@ const menuMobile = abc(".background-menu");
 const menuBtn = abc(".menu-icon");
 
 const openAnswer = ABC(".show-answer");
-console.log(openAnswer);
 const questionItem = abc(".question-item");
 
 const closeMenu = abc(".close-menu__icon");
